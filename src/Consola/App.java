@@ -15,5 +15,9 @@ public class App {
 		CentroVeterinario v = new CentroVeterinario();  
 		v.addAnimal(g); //le añado el gato g al CentroVeterinario.
 		v.addAnimal(p); //le añado el perro
+		
+//		Una vez añadidos los animales en el CentroVeterinario 
+//		los muestro por pantalla
+		v.mostrarAnimales();
 	}
 }

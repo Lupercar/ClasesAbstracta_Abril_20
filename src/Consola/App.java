@@ -1,14 +1,13 @@
 package Consola;
 
 import fauna.Animal;
+import fauna.Gato;
+import fauna.Perro;
 
 public class App {
 
 	public static void main(String[] args) {
-//		No me interesa que alguien pueda hacerme esto, 
-//		quiero que sólo haya objetos de tipo Gatos y Perros.
-//		Animal a = new Animal(); //para ello pongo la clase Animal abstracta
-		
+		Gato g = new Gato("Misha", 3.0f); 
+		Perro p = new Perro("Lassie", 20.0f); 
 	}
-
 }

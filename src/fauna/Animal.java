@@ -1,6 +1,7 @@
 package fauna;
 
-public class Animal {
+abstract public class Animal { 
+	//añadir abstract evita se pueda hacer un new de la clase.
 	private String nombre;
 	private float peso;
 	

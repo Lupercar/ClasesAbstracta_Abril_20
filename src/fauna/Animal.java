@@ -29,4 +29,9 @@ abstract public class Animal {
 	public void setPeso(float peso) {
 		this.peso = peso;
 	}
+	
+	//creo método tipoAnimal 
+	public String tipoAnimal(){
+		return ""; //no tiene sentido poner este método aquí  
+	}
 }

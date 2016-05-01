@@ -22,4 +22,15 @@ public class CentroVeterinario {
 		//en la lista animales añado el animal
 		animales.add(animal); 
 	}
+	
+	//Queremos ver que tenemos dentro de la lista
+	public void mostrarAnimales(){
+//		recorremos nuestra lista de Animales mediante un bucle foreach
+//		Tenemos un animal de tipo Animal y recorremos la lista animales
+		for(Animal animal : animales){
+			animal.getNombre();
+			animal.getPeso(); 
+			animal.tipoAnimal(); //este método me interesa que este dentro de la clase Animal
+		}
+	}
 }

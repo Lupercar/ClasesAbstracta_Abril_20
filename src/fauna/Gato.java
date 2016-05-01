@@ -11,6 +11,8 @@ public class Gato extends Animal {
 		super(nombre, peso);
 	}
 
+//	El hijo está obligado a implementar el método abstracto o 
+//	convertir la clase a una clase abstracta
 	@Override
 	public String tipoAnimal() {
 		// TODO Auto-generated method stub

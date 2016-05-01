@@ -28,9 +28,9 @@ public class CentroVeterinario {
 //		recorremos nuestra lista de Animales mediante un bucle foreach
 //		Tenemos un animal de tipo Animal y recorremos la lista animales
 		for(Animal animal : animales){
-			animal.getNombre();
-			animal.getPeso(); 
-			animal.tipoAnimal(); //este método me interesa que este dentro de la clase Animal
+			System.out.println("Me llamo: "+animal.getNombre() +
+								" Peso: "+animal.getPeso() + 
+								" "+animal.tipoAnimal()); //este método me interesa que este dentro de la clase Animal
 		}
 	}
 }

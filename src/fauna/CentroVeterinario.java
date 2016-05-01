@@ -25,12 +25,18 @@ public class CentroVeterinario {
 	
 	//Queremos ver que tenemos dentro de la lista
 	public void mostrarAnimales(){
-//		recorremos nuestra lista de Animales mediante un bucle foreach
-//		Tenemos un animal de tipo Animal y recorremos la lista animales
-		for(Animal animal : animales){
-			System.out.println("Me llamo: "+animal.getNombre() +
-								" Peso: "+animal.getPeso() + 
-								" "+animal.tipoAnimal()); //este método me interesa que este dentro de la clase Animal
-		}
+		
+//		A partir de JAVA8 las colecciones tienen una nueva forma de recorrerse
+//		se pueden serializar y hacerlo pasar por una tubería. Por cada elemento se puede realizar una cierta tarea.
+//		Estas tuberías se pueden encadenar para realizar tareas en cada una.
+		
+		animales.stream()
+				.forEach(
+						a -> System.out.println(
+								"Me llamo:" + a.getNombre() +
+								" Peso:" + a.getPeso() +
+								" " + a.tipoAnimal()
+								)
+						); 
 	}
 }

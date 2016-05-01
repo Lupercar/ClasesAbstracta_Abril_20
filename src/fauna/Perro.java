@@ -9,5 +9,11 @@ public class Perro extends Animal{
 	public Perro(String nombre, float peso) {
 		super(nombre, peso);
 	}
+
+	@Override
+	public String tipoAnimal() {
+		// TODO Auto-generated method stub
+		return "Soy un perro.";
+	}
 	
 }

@@ -31,7 +31,7 @@ abstract public class Animal {
 	}
 	
 	//creo método tipoAnimal 
-	public String tipoAnimal(){
-		return ""; //no tiene sentido poner este método aquí  
-	}
+//	sino queremos ponerle código a un método lo podemos definir como abstracto
+//	el codigo se lo introduce las clases hijas. 
+	abstract public String tipoAnimal();
 }
